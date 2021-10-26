@@ -5,11 +5,11 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>Seleniumframework</groupId>
-	<artifactId>Seleniumframework</artifactId>
+	<groupId>BDD_Selenium_JUnit</groupId>
+	<artifactId> BDD_Selenium_JUnit</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
-	<name>Seleniumframework</name>
+	<name> BDD_Selenium_JUnit</name>
 	<!-- FIXME change it to the project's website -->
 	<url>http://www.example.com</url>
 
@@ -119,8 +119,8 @@
 					<includes>
 						<include>**/*MyTestRunner.java</include>
 					</includes>
-					<parallel>methods</parallel>
-					<useUnlimitedThreads>true</useUnlimitedThreads>
+					<!-- <parallel>methods</parallel>
+					<useUnlimitedThreads>true</useUnlimitedThreads> -->
 				</configuration>
 			</plugin>
 			<plugin>
@@ -133,14 +133,14 @@
 							<goal>integration-test</goal>
 							<goal>verify</goal>
 						</goals>
-						<configuration>
+						<!-- <configuration>
 							<includes>
 								<include>**/MyTestRunner.java</include>
 							</includes>
 							<parallel>methods</parallel>
 							<threadCount>4</threadCount>
 							<perCoreThreadCount>true</perCoreThreadCount>
-						</configuration>
+						</configuration> -->
 					</execution>
 				</executions>
 			</plugin>
